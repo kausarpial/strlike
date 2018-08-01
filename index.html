@@ -15,7 +15,6 @@
             html {
                 width: 100%;
             }
-    
             body {
                 width: 100%;
                 margin: 0;
@@ -49,29 +48,51 @@
         </style>
         <!--  Responsive CSS  -->
         <style type="text/css">
+            @media only screen and (max-width: 500px) {
+                .header{
+                    padding: 80px 5% 100px !important;
+                }
+                .service{
+                    padding: 50px 5% 35px !important;
+                }
+                .blockqoute{
+                    padding: 40px 5% !important;
+                }
+                .cta{
+                    padding: 40px 5% !important;
+                }
+                .review{
+                    padding: 40px 5% !important;
+                }
+                .service-item{
+                    width: 100% !important;
+                    padding-left: 0 !important;
+                    padding-right: 0 !important;
+                    display: block;
+                    padding-bottom: 30px;
+                }
+            }
+
             @media only screen and (max-width: 600px) {
-                body[yahoo] .full_width_600 {
-                    width: 90% !important;
+                .header{
+                    padding: 80px 7% 120px !important;
+                }
+                .service{
+                    padding: 60px 7% 40px !important;
+                }
+                .blockqoute{
+                    padding: 50px 7% !important;
+                }
+                .cta{
+                    padding: 50px 7% !important;
+                }
+                .review{
+                    padding: 50px 7% !important;
                 }
             }
     
             @media only screen and (max-width: 700px) {
-                body[yahoo] .full_width_700 {
-                    width: 100% !important;
-                }
-                body[yahoo] .txt_center {
-                    text-align: center !important;
-                }
-                body[yahoo] .separator {
-                    height: 40px !important;
-                }
-            }
-            .header{
-                background-image: url('https://user-images.githubusercontent.com/16266381/43498548-37779154-9569-11e8-9fd9-ba6c2b8e874a.png');
-                background-size: cover;
-                background-position: bottom center;
-                background-repeat: no-repeat;
-                padding: 100px 90px;
+
             }
         </style>
     
@@ -80,7 +101,7 @@
     <body style="margin: 0; padding: 0;" yahoo="fix">
         <div class="main_container">
             <!-- Header -->
-            <table width="100%" class="header">
+            <table width="100%" class="header" style=" background-image: url('https://user-images.githubusercontent.com/16266381/43498548-37779154-9569-11e8-9fd9-ba6c2b8e874a.png');background-size: cover; background-position: bottom center; background-repeat: no-repeat; padding: 100px 10% 150px;">
                 <tr>
                     <td class="logo" style="padding-bottom: 65px">
                         <img src="https://user-images.githubusercontent.com/16266381/43499147-f66ecddc-956b-11e8-8308-adc3f6ba3b38.png" alt="logo">
@@ -103,7 +124,7 @@
             </table>
             <!-- Header End -->
             <!-- Service -->
-            <table class="service" style="padding: 75px 90px 50px;">
+            <table class="service" style="padding: 75px 10% 50px;">
                 <tr>
                     <td class="service-item" width="50%" style="padding-right: 15px;">
                         <img src="https://user-images.githubusercontent.com/16266381/43500034-513be5e8-9570-11e8-8e9d-7449a41f5418.png" alt="service-icon" style="margin-bottom: 20px;">
@@ -127,7 +148,7 @@
             </table>
             <!-- Service End -->
             <!-- Blockqoute -->
-            <table style="padding: 50px 90px;">
+            <table class="blockqoute" style="padding: 50px 10%;">
                 <tr>
                     <td style="padding: 5px 25px; border-left: 2px solid #E6676B;">
                         <p style="color: #7f7f7f; margin-bottom: 25px;">
@@ -141,7 +162,7 @@
             </table>
             <!-- Blockqoute End -->
             <!-- Customer -->
-            <table style="padding: 50px 90px;">
+            <table class="cta" style="padding: 50px 10%;">
                 <tr>
                     <td>
                         <h2 style="text-align: center; font-size: 24px; color: #000000; font-family: 'Poppins', sans-serif; font-weight: 600;">
@@ -152,19 +173,88 @@
             </table>
             <!-- Customer End -->
             <!-- Review -->
-            <table>
+            <table class="review" width="100%" style="padding: 50px 10%;">
                 <tr>
                     <td>
-
+                        <h6 style="font-size: 18px; font-family: 'Poppins', sans-serif; margin-bottom: 40px; font-weight: 400;">Here are some reviews:</h6>
                     </td>
                 </tr>
                 <tr>
-                    <td width="100%" style="text-align: center;">
-                        <a href="#" style="text-transform: uppercase; padding: 20px 50px; background-color: #E6676B; color: #ffffff;border-radius: 50px; text-decoration: none; font-weight: bold; display: block; margin: 0 auto;">Browse Our Package</a>
+                    <td class="review-item">
+                        <table width="100%" style="padding-bottom: 35px;">
+                            <tr>
+                                <td width="10%">
+                                    <img src="https://user-images.githubusercontent.com/16266381/43538255-524f8e80-95e3-11e8-9a9c-9dbe658295d3.png" width="100%" alt="icon">
+                                </td>
+                                <td width="90%" style="padding-left: 25px;">
+                                    <h4 style="font-size: 15px;">Name Goes Here</h4>
+                                    <p style="font-size: 13px; margin-bottom: 5px; color: #7f7f7f;">Company Name</p>
+                                    <p style="font-size: 15px; color: #7f7f7f;">
+                                        Wow, literally starts within a few seconds of placing the order!
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="review-item">
+                        <table width="100%" style="padding-bottom: 35px;">
+                            <tr>
+                                <td width="10%">
+                                    <img src="https://user-images.githubusercontent.com/16266381/43538255-524f8e80-95e3-11e8-9a9c-9dbe658295d3.png" width="100%"
+                                        alt="icon">
+                                </td>
+                                <td width="90%" style="padding-left: 25px;">
+                                    <h4 style="font-size: 15px;">Name Goes Here</h4>
+                                    <p style="font-size: 13px; margin-bottom: 5px; color: #7f7f7f;">Company Name</p>
+                                    <p style="font-size: 15px; color: #7f7f7f;">
+                                        Wow, literally starts within a few seconds of placing the order!
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="review-item">
+                        <table width="100%" style="padding-bottom: 35px;">
+                            <tr>
+                                <td width="10%">
+                                    <img src="https://user-images.githubusercontent.com/16266381/43538255-524f8e80-95e3-11e8-9a9c-9dbe658295d3.png" width="100%"
+                                        alt="icon">
+                                </td>
+                                <td width="90%" style="padding-left: 25px;">
+                                    <h4 style="font-size: 15px;">Name Goes Here</h4>
+                                    <p style="font-size: 13px; margin-bottom: 5px; color: #7f7f7f;">Company Name</p>
+                                    <p style="font-size: 15px; color: #7f7f7f;">
+                                        Wow, literally starts within a few seconds of placing the order!
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; padding: 70px 0;">
+                        <a href="#" style="text-transform: uppercase; padding: 20px 50px; background-color: #E6676B; color: #ffffff; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0px 22px 34px rgba(0, 0, 0, 0.13369); display: inline-block; -webkit-box-shadow: 0px 22px 34px rgba(0, 0, 0, 0.13369);">Browse Our Package</a>
                     </td>
                 </tr>
             </table>
             <!-- Review End -->
+            <!-- Footer -->
+            <table width="100%" style="padding: 100px 0 70px; background-image: url('https://user-images.githubusercontent.com/16266381/43536785-4c19ac34-95df-11e8-9a79-754e88e9c8ff.png'); background-position: top center; background-size: cover; background-repeat: no-repeat;">
+                <tr>
+                    <td style="text-align: center;">
+                        <p style="color: #fff; font-size: 13px;">Contact: <a href="mailto:info@example.com" style="color: #fff; text-decoration: none;">info@example.com</a></p>
+                        <a style="padding: 13px 0; font-size: 15px; color: #fff; display: inline-block;">Unsubscribe</a>
+                        <p class="footer-address" style="color: #fff; padding: 10px 10%; font-size: 12px; line-height: 18px; ">
+                            example Inc., The Marketplace For Free and Commercial Code 2483 Old Middlefield Way #209, Mountain View, CA 94043-2330
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <!-- Footer End -->
         </div>
     </body>
 </html>
